@@ -1,7 +1,8 @@
 #include"Motorbike.h"
 
 
-Motobike::Motobike(int id) {};
+Motobike::Motobike(){};
+Motobike::Motobike(int id) : Vehicle(id) {}
 int Motobike::getParkingDuration() {
 
     time_t currTime = time(nullptr);

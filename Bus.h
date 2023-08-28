@@ -6,6 +6,7 @@ using namespace std;
 
 class Bus : public Vehicle {
     public:
+    Bus();
     Bus(int id);
     int getParkingDuration();
 };

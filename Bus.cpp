@@ -1,6 +1,6 @@
 #include"Bus.h"
 
-
+Bus::Bus() {};
 Bus::Bus(int id) {};
 int Bus::getParkingDuration() {
     time_t currTime = time(nullptr);

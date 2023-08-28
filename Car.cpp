@@ -1,7 +1,8 @@
 #include"Car.h"
 
+Car::Car() {};
+Car::Car(int id) : Vehicle(id){}
 
-Car::Car(int id) {};
 int Car::getParkingDuration(){ 
     time_t currTime = time(nullptr);
     int elapsedTime = static_cast<int>(currTime - getTime());
