@@ -37,6 +37,7 @@ int main() {
 
     // Display parking durations
     while (true) {
+        
         for (int i = 0; i < numCars + numBuses + numMotorbikes; i++) {
             cout << "Vehicle parking duration: " << vehicles[i]->getParkingDuration() << endl;
         }
