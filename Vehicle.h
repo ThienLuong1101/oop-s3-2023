@@ -11,7 +11,7 @@ class Vehicle {
     Vehicle( int id);
     time_t getTime();
     int getID();
-    virtual int getParkingDuration() = 0;
+    virtual int getParkingDuration();
     ~Vehicle() ;
 };
 
