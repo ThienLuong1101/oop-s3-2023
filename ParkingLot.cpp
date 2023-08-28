@@ -49,8 +49,5 @@ int ParkingLot::countOverStayingVehicles(int maxParkingDuration) {
     return count;
 } 
 ParkingLot::~ParkingLot() {
-    for (int i = 0; i < vehicleCount; ++i) {
-        delete vehicles[i];
-    }
     delete[] vehicles;
 }
