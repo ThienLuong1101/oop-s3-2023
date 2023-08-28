@@ -5,10 +5,8 @@ Motorbike::Motorbike(){};
 Motorbike::Motorbike(int id) : Vehicle(id) {}
 int Motorbike::getParkingDuration() {
 
-    time_t currTime = time(nullptr);
-    int elapsedTime = static_cast<int>(currTime - getTime());
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000-150));
-    return elapsedTime; 
+        std::time_t currentTime = std::time(nullptr);
+    return static_cast<int>(currentTime - getTime()) * 0.85;
     
 }
 

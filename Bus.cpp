@@ -3,8 +3,6 @@
 Bus::Bus() {};
 Bus::Bus(int id) {};
 int Bus::getParkingDuration() {
-    time_t currTime = time(nullptr);
-    int elapsedTime = static_cast<int>(currTime - getTime());
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000-250));
-    return elapsedTime; 
+    std::time_t currentTime = std::time(nullptr);
+    return static_cast<int>(currentTime - getTime()) * 0.75;
 }
