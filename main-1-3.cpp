@@ -38,7 +38,7 @@ int main() {
             cout << "Vehicle parking duration: " << park.getVehicle(i)->getParkingDuration() << endl;
         }
          int maxParkingDuration = 15;
-        ans = park.countOverStayingVehicles(maxParkingDuration); 
+        ans = park.countOverstayingVehicles(maxParkingDuration); 
     }
     
 
