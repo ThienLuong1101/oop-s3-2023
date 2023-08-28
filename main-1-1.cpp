@@ -13,9 +13,9 @@ int main() {
     cin >> bu;
     cout << "How many Motorbikes?: ";
     cin >> mo;
-    Motorbike m(3);
+    Motorbike m(1);
     Bus b(1);
-    Car c(2);
+    Car c(3);
     Vehicle** vehicles = new Vehicle*[ca+bu+mo];
     for (int i = 0; i < ca; i++)
     {
