@@ -6,25 +6,28 @@ using namespace std;
 
 
 int main() {
-    int c, b, m;
+    int ca, bu, mo;
     cout << "How many cars?: ";
-    cin >> c;
+    cin >> ca;
     cout << "How many buses?: ";
-    cin >> b;
-    cout << "How many motobikes?: ";
-    cin >> m;
-    Vehicle** vehicles = new Vehicle*[c+b+m];
-    for (int i = 0; i < c; i++)
+    cin >> bu;
+    cout << "How many Motorbikes?: ";
+    cin >> mo;
+    Motorbike m(3);
+    Bus b(1);
+    Car c(2);
+    Vehicle** vehicles = new Vehicle*[ca+bu+mo];
+    for (int i = 0; i < ca; i++)
     {
-        vehicles[i] = new Car();
+        vehicles[i] = new Car(c);
     }
-    for (int i = 0; i < b; i++)
+    for (int i = 0; i < bu; i++)
     {
-        vehicles[i+c] = new Bus();
+        vehicles[i+ca] = new Bus(b);
     }
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < mo; i++)
     {
-        vehicles[i+c+b] = new Motobike();
+        vehicles[i+ca+bu] = new Motorbike(m);
     }
 
     while (true)

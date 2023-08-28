@@ -1,9 +1,9 @@
 #include"Motorbike.h"
 
 
-Motobike::Motobike(){};
-Motobike::Motobike(int id) : Vehicle(id) {}
-int Motobike::getParkingDuration() {
+Motorbike::Motorbike(){};
+Motorbike::Motorbike(int id) : Vehicle(id) {}
+int Motorbike::getParkingDuration() {
 
     time_t currTime = time(nullptr);
     int elapsedTime = static_cast<int>(currTime - getTime());

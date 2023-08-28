@@ -5,9 +5,9 @@
 using namespace std;
 
 
-class Motobike : public Vehicle {
+class Motorbike : public Vehicle {
     public:
-    Motobike();
-    Motobike(int id);
+    Motorbike();
+    Motorbike(int id);
     int getParkingDuration();
 };
