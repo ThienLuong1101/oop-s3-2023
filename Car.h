@@ -6,7 +6,7 @@ using namespace std;
 
 class Car : public Vehicle {
     public:
-    Car();
+    Car(int id);
     int getParkingDuration();
     
 };

@@ -7,6 +7,6 @@ using namespace std;
 
 class Motobike : public Vehicle {
     public:
-    Motobike();
+    Motobike(int id);
     int getParkingDuration();
 };
