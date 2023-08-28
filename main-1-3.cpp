@@ -41,11 +41,7 @@ int main() {
         ans = park.countOverStayingVehicles(maxParkingDuration); 
     }
     
-    int id;
-    cout << "enter an id to unpark a vehicle: ";
-    cin >> id;
-    park.unparkVehicle(id);
-   
+
     cout << "there are " << ans << " are overstaying" <<endl;
     return 0;
 }
