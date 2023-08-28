@@ -42,7 +42,7 @@ int main() {
 
 
 
-    for (int i = 0; i < c+b+m; i++)
+    for (int i = 0; i < ca+bu+mo; i++)
     {
         delete vehicles[i];
     }
