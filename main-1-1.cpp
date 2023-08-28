@@ -32,7 +32,7 @@ int main() {
 
     while (true)
     {
-        for (int i = 0; i < c+b+m; i++)
+        for (int i = 0; i < ca+bu+mo; i++)
         {
             cout << vehicles[i]->getParkingDuration() << endl;
         }
