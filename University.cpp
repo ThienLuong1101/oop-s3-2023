@@ -25,6 +25,15 @@ void University::addCourse(int id, string name) {
     }
     curr++;
 }
-University::~University() {
-    delete [] courses;
+
+void University::printCourse() {
+    for (int i = 0; i < curr; i++)
+    {
+        cout<<courses[i].get_id_course()<<endl;
+        cout<<courses[i].get_name_course()<<endl;
+    }
+    
 }
+// University::~University() {
+//     delete [] courses;
+// }

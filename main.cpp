@@ -4,6 +4,7 @@
 #include"Instructor.h"
 #include"Course.h"
 #include"Gradebook.h"
+#include"University.h"
 #include<iostream>
 
 int main() {
@@ -24,12 +25,14 @@ int main() {
     course.addPerson(list[0]);
     course.addPerson(list[1]);
     cout<<grade.get_student_id()<<endl;
-    Gradebook book;
+    Gradebook book(1); //Define the length of the book list
     book.addGrade(1101,1004,"OOP",95);
     book.printBook();
-    
-    // book.addGrade();
-    // GOT.addCourse();
-     
+    University GOT("Adelaide","Ade");
+    cout<<GOT.get_location()<<endl;
+    cout<<GOT.get_name_uni()<<endl;
+    GOT.Uni_Course(1);
+    GOT.addCourse(1004,"OOP");
+    GOT.printCourse();
     return 0;
 }

@@ -1,3 +1,6 @@
+#ifndef GRADEBOOK_H
+#define GRADEBOOK_H
+
 #include"Grade.h"
 #include<iostream>
 
@@ -14,4 +17,4 @@ public:
     // ~Gradebook();
 };
 
-
+#endif

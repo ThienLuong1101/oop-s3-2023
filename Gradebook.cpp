@@ -1,3 +1,4 @@
+
 #include"Gradebook.h"
 
 
@@ -19,12 +20,12 @@
         
     }
     void Gradebook::printBook() {
-    for (int i = 0; i < curr; i++) {
-        cout << "Student ID: " << grades[i].get_student_id() << endl;
-        cout << "Course ID: " << grades[i].get_course_id() << endl;
-        cout << "Assignment: " << grades[i].get_assignment() << endl;
-        cout << "Grade: " << grades[i].get_value() << endl;
-        cout << "-------------------------" << endl;
+    
+    cout << "Student ID: " << grades[0].get_student_id() << endl;
+    cout << "Course ID: " << grades[0].get_course_id() << endl;
+    cout << "Assignment: " << grades[0].get_assignment() << endl;
+    cout << "Grade: " << grades[0].get_value() << endl;
+    cout << "-------------------------" << endl;
+
     }
-}
     // Gradebook::~Gradebook() {delete [] grades;}

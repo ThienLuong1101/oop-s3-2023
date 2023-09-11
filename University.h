@@ -22,5 +22,6 @@ public:
     string get_location();
     void Uni_Course(int len);
     void addCourse(int id, string name);
-    ~University();
+    void printCourse();
+    // ~University();
 };
