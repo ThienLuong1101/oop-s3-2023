@@ -8,7 +8,7 @@ class Ship: public GameEntity
 private:
 
 public:
-    Ship(int x, int y) : GameEntity(x,y,'X') {}
+    Ship(int x, int y) : GameEntity(x,y,'S') {}
     void move(int dx, int dy) {
         int x, y;
         tie(x,y) = position;
