@@ -24,8 +24,9 @@ public:
     // }
     static tuple<int, int> generateRandomCoordinates(int gridWidth, int gridHeight) {
        
-        int x = rand() % gridWidth-1;
-        int y = rand() % gridHeight-1;
+        srand((unsigned) time(NULL));
+        int x = rand() % gridWidth;
+        int y = rand() % gridHeight;
 
         return make_tuple(x,y);
 
