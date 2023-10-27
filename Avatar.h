@@ -1,3 +1,4 @@
+#ifndef AVATAR_H
 #define AVATAR_H
 
 #include"GridUnit.h"
@@ -14,3 +15,4 @@ public:
 };
 
 
+#endif
