@@ -11,13 +11,21 @@ class Helper
 {
 
 public:
+    // static tuple<int, int> generateRandomCoordinates(int gridWidth, int gridHeight) {
+    //     random_device rd;
+    //     mt19937 gen(rd());
+    //     uniform_int_distribution WidthDist(0,gridWidth-1);
+    //     uniform_int_distribution HeightDist(0,gridHeight-1);
+    //     int x = WidthDist(gen);
+    //     int y = HeightDist(gen);
+
+    //     return make_tuple(x,y);
+
+    // }
     static tuple<int, int> generateRandomCoordinates(int gridWidth, int gridHeight) {
-        random_device rd;
-        mt19937 gen(rd());
-        uniform_int_distribution WidthDist(0,gridWidth-1);
-        uniform_int_distribution HeightDist(0,gridHeight-1);
-        int x = WidthDist(gen);
-        int y = HeightDist(gen);
+       
+        int x = rand() % gridWidth-1;
+        int y = rand() % gridHeight-1;
 
         return make_tuple(x,y);
 
