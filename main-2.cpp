@@ -11,5 +11,7 @@ int main() {
     a.apply(b);
     cout << a.getEntity() << endl;
     c.shift(2,2);
+    a.apply(c);
+    cout << c.getEntity() << endl;
     return 0;
 }

@@ -5,7 +5,7 @@
 using namespace std;
 class GridUnit
 {
-protected:
+private:
     tuple<int,int> coordinates;
     char entity;
 public:

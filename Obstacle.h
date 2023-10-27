@@ -15,7 +15,7 @@ public:
     virtual void apply(GridUnit& unit) {
         if (active)
         {
-            entity = 'O';
+            unit.setEntity('O');
             active = false;
         }
     }
