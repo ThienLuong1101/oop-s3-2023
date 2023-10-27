@@ -1,3 +1,4 @@
+#ifndef OBSTACLE_H
 #define OBSTACLE_H
 
 #include"GridUnit.h"
@@ -22,3 +23,4 @@ public:
 
 };
 
+#endif
