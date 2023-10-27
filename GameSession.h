@@ -12,10 +12,12 @@ class GameSession
 private:
     vector<GridUnit*> grid;
     int maxHei, maxWid;
-    vector<GridUnit*>& getGrid() {
-        return grid;
-    }
+    
 public:
+    GameSession(){}
+    vector<GridUnit*>& getGrid() {
+            return grid;
+        }
     void initGameSession(int numAvatars, int numObstacles, int gridWidth, int gridHeight) {
         maxHei = gridHeight;
         maxWid = gridWidth;
