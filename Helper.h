@@ -1,5 +1,7 @@
+#ifndef HELPER_H
 #define HELPER_H
 
+#include<iostream>
 #include<tuple>
 #include<random>
 #include<cmath>
@@ -7,8 +9,7 @@ using namespace std;
 
 class Helper
 {
-private:
-    /* data */
+
 public:
     static tuple<int, int> generateRandomCoordinates(int gridWidth, int gridHeight) {
         random_device rd;
@@ -21,6 +22,7 @@ public:
         return make_tuple(x,y);
 
     }
+
     static double calculateDistance(std::tuple<int, int> coords1, std::tuple<int, int> coords2){
         int x1, x2, y1, y2;
         tie(x1,y1)= coords1;
@@ -34,3 +36,4 @@ public:
 
 };
 
+#endif
